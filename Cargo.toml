@@ -137,7 +137,8 @@ edition = "2021"
 [workspace.dependencies]
 Inflector = "0.11.4"
 aquamarine = "0.3.3"
-aes-gcm-siv = "0.10.3"
+# Edit version here (was 0.10.3)
+aes-gcm-siv = "=0.11.1"
 ahash = "0.8.10"
 anyhow = "1.0.80"
 arbitrary = "1.3.2"
@@ -184,7 +185,7 @@ criterion-stats = "0.3.0"
 crossbeam-channel = "0.5.12"
 csv = "1.3.0"
 ctrlc = "3.4.2"
-# Testing versioning here 
+# Testing versioning here (was 3.2.1)
 curve25519-dalek = "=4.1.2"
 dashmap = "5.5.3"
 derivation-path = { version = "0.2.0", default-features = false }
@@ -508,9 +509,9 @@ solana-zk-token-sdk = { path = "zk-token-sdk" }
 #
 # https://github.com/RustCrypto/AEADs/compare/aes-gcm-siv-v0.10.3..6105d7a5591aefa646a95d12b5e8d3f55a9214ef
 #
-[patch.crates-io.aes-gcm-siv]
-git = "https://github.com/RustCrypto/AEADs"
-rev = "6105d7a5591aefa646a95d12b5e8d3f55a9214ef"
+# [patch.crates-io.aes-gcm-siv]
+# git = "https://github.com/RustCrypto/AEADs"
+# rev = "6105d7a5591aefa646a95d12b5e8d3f55a9214ef"
 
 # Our dependency tree has `curve25519-dalek` v3.2.1.  They have removed the
 # constraint in the next major release. The commit that removes the `zeroize`
